@@ -9,10 +9,13 @@
  
 h1, h2, h3, h4 {font-family: Montserrat, sans-serif;
 			color: white; 
+			
 			text-shadow: 2px 2px 2px #c5f3f4;}
 
-body{margin-top:0%;
-background-color:#87c9c2;
+body{/*I can't get the header to work right if using this tag*/
+	margin-top:0%;
+	background: linear-gradient(#b0e0e6,#87c9c2);
+	
 	z-index:1;
 	width:100%;
 }
@@ -33,6 +36,7 @@ div.header{float:top;
 	position:fixed;
 	padding:0%;
 	background-color:#00c5ff;
+	background: linear-gradient(to bottom, #cedbe9 0%,#aac5de 0%,#4bb8f0 3%,#3a84c3 51%,#3a8bc2 84%,#419ad6 100%,#26558b 100%);
 	color:black;
 	width:100%;
 	margin-top:0%;
@@ -41,6 +45,18 @@ div.header{float:top;
 	text-indent:1%;
 	vertical-align:center;
 	z-index:3;
+	font-size:115%;
+}
+div.footer{
+	position:bottom;
+	z-index:5;
+	text-indent:1%;
+	margin-bottom:0%;
+	background-color:#00c5ff;
+	background: linear-gradient(to bottom, #cedbe9 0%,#aac5de 0%,#4bb8f0 3%,#3a84c3 51%,#3a8bc2 84%,#419ad6 100%,#26558b 100%);
+	color:black;
+	height:10%;
+	width:100%;
 }
 div.nav{
 	/*float:top;*/
@@ -50,7 +66,7 @@ div.nav{
 	color:black;
 	width:100%;
 	padding-left:1%;
-	margin-top:3%;
+	margin-top:5%;
 	text-align:left;
 	display: inline-block;
 	z-index:4;
@@ -75,16 +91,7 @@ div.bodyright{/*For use with left*/
 	z-index:1;
 	max-width:45%;
 }
-div.footer{
-	position:bottom;
-	z-index:5;
 
-	margin-bottom:0%;
-	background-color:#00c5ff;
-	color:black;
-	height:10%;
-	width:100%;
-}
 div.right{
 	background-color:#b0e0e6;
 	color:blue;
@@ -148,5 +155,8 @@ nav li a{
 	
 }
 
-p{	font-weight:bold;
+p.paragraph{	font-weight:bold;
 	text-indent:50px;}
+p{
+
+}
